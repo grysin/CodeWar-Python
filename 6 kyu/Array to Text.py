@@ -11,3 +11,8 @@
 # Don't forget the space after the closing parentheses!
 
 # Solution 
+def create_phone_number(n):
+    phone_number = "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
+    return phone_number
+
+print(create_phone_number([1,2,3,4,5,6,7,8,9,0]))
